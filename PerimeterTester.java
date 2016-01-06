@@ -9,7 +9,7 @@
 
 import java.awt.Rectangle;
 
-public class P02d02 {
+public class PerimeterTester {
     public static void main(String[] args) {
 
         // Declare and initialize our variables (c.f. 2.1, 2.2, 2.3)
@@ -28,7 +28,7 @@ public class P02d02 {
 
         // Declare and construct our objects (c.f. 2.4, 2.5, 2.6)
 
-        Rectangle box = new Rectangle(xpos, ypos, (xpos + width), (ypos + height));
+        Rectangle box = new Rectangle(xpos, ypos, width, height);
 
         // Calculate the perimeter using the object's accessor methods
         //
@@ -38,7 +38,7 @@ public class P02d02 {
         //
         //        Docs for Math.round:  http://docs.oracle.com/javase/7/docs/api/java/lang/Math.html
 
-        calcedPerimeter = Math.round(2 * (box.getWidth() - box.getX()) + 2 * (box.getHeight() - box.getY()));
+        calcedPerimeter = Math.round(2 * box.getWidth() + 2 * box.getHeight());
 
         // Print out what we calculated
 

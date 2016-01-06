@@ -9,7 +9,7 @@
 
 import java.awt.Rectangle;
 
-public class P02d01 {
+public class AreaTester {
     public static void main(String[] args) {
 
         // Declare and initialize our variables (c.f. 2.1, 2.2, 2.3)
@@ -28,7 +28,7 @@ public class P02d01 {
 
         // Declare and construct our objects (c.f. 2.4, 2.5, 2.6)
 
-        Rectangle box = new Rectangle(xpos, ypos, (xpos + width), (ypos + height));
+        Rectangle box = new Rectangle(xpos, ypos, width, height);
 
         // Calculate the area using the object's accessor methods
         //
@@ -38,7 +38,7 @@ public class P02d01 {
         //
         //        Docs for Math.round:  http://docs.oracle.com/javase/7/docs/api/java/lang/Math.html
 
-        calcedArea = Math.round((box.getWidth() - box.getX()) * (box.getHeight() - box.getY()));
+        calcedArea = Math.round(box.getWidth() * box.getHeight());
 
         // Print out what we calculated
 
