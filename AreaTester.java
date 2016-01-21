@@ -13,11 +13,6 @@ public class AreaTester {
     public static void main(String[] args) {
 
         // Declare and initialize our variables (c.f. 2.1, 2.2, 2.3)
-        //
-        // Note:  'long' is also an integer but can hold larger numbers.
-        //         See: http://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
-        //         We use it because Math.round (see below) returns a long and we must match types
-        //         because Java is a strongly typed language
 
         int xpos        =  5;  // In a 'real life' program, these values would probably
         int ypos        = 10;  // all come from some input from the user or elsewhere
