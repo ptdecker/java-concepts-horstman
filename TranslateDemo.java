@@ -47,6 +47,9 @@ public class TranslateDemo {
 
         frame.setBounds(box);  // And use it to reset the boundary of our window
 
+        // Exit
+
+        System.exit(0);
     }
 
 } // class TranslateDemo
